@@ -4,7 +4,7 @@
 This guide details the setup process for a Python virtual environment tailored for the SOFA framework, including environment creation, dependency installation, and cloning of the SOFA repository.
 
 ## Requirements
-- Python (preferably 3.6 or higher)
+- Python (preferably 3.8 or higher)
 - Git
 
 ## Installation Steps
@@ -13,16 +13,16 @@ This guide details the setup process for a Python virtual environment tailored f
 
 You can use tools like venv, conda, or pyenv to create a virtual environment. Here is the method using Python's venv:
 
-bash
+```bash
 # Create the virtual environment
 python -m venv myenv
+```
 
-
-bash
-# Activate the virtual environment
+### Step 2: Activate the Virtual Environment
+```bash
 # On Windows
 myenv\Scripts\activate
-
+```
 
 ### Step 2: Install Dependencies
 
