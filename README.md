@@ -24,7 +24,7 @@ python -m venv myenv
 myenv\Scripts\activate
 ```
 
-### Step 2: Install Dependencies
+### Step 3: Install Dependencies
 
 Install the necessary Python packages in your virtual environment:
 
