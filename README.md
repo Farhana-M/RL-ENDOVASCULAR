@@ -28,23 +28,24 @@ myenv\Scripts\activate
 
 Install the necessary Python packages in your virtual environment:
 
-bash
+```bash
 pip install numpy scipy pybind11
+```
 
-
-### Step 3: Create Directory Structure
+### Step 4: Create Directory Structure
 
 Set up the appropriate directory structure for the SOFA framework:
 
-bash
+```bash
 mkdir mySofa
 cd mySofa
 mkdir build src
-
+```
 
 ### Step 4: Clone the SOFA Framework
 
 Clone the SOFA framework repository into the 'src' directory using Git. Adjust the version tag (-b) to the version you need:
 
-bash
+```bash
 git clone -b v23.12.00 --depth 1 https://github.com/sofa-framework/sofa.git ./src
+```
