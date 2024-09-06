@@ -46,12 +46,15 @@ cd mySofa
 
 ### Step 5: Clone the SOFA Framework
 
-Clone the SOFA framework repository into the 'src' directory using Git. Adjust the version tag (-b) to the version you need:
+Clone the SOFA repository directly into a new `src` directory. This command also creates the `src` directory automatically:
 
 ```bash
-git clone -b v23.12.00 --depth 1 https://github.com/sofa-framework/sofa.git ./src
+git clone -b v23.12.00 --depth 1 https://github.com/sofa-framework/sofa.git src
 ```
-
+Now, create a build directory to hold your compilation output:
+```bash
+mkdir build
+```
 ### Step 6: Follow SOFA Instructions and Set CMake Variables
 
 1. **Refer to SOFA Documentation**
