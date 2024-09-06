@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This guide provides step-by-step instructions to set up a Python virtual environment, install the necessary dependencies for the **SOFA**, **dEVE**, and **dEVE_bench** frameworks, clone the repositories, and test the installation using a Python script.
+This guide provides step-by-step instructions to set up a Python virtual environment, install the necessary dependencies for the **SOFA**, **dEVE**, and **dEVE_bench** frameworks, clone the repositories, and test the installation of **dEVE** and **dEVE_bench** using a Python script.
 
 ## Requirements
 
