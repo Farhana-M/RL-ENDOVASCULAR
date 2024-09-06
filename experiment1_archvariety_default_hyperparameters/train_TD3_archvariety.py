@@ -197,7 +197,7 @@ if __name__ == "__main__":
         current_timestep = 0
         print("Starting training from scratch")
 
-    eval_callback = CustomEvalCallback(eval_env, eval_freq=250000,start_step=current_timestep, log_path="/nfs/home/agranados/projects/RL/Scripts/batch_eleven/TD3_model_11_small_results.csv", verbose=1)
+    eval_callback = CustomEvalCallback(eval_env, eval_freq=250000,start_step=current_timestep, log_path="/nfs/home/agranados/projects/RL/Scripts/batch_eleven/TD3_model_11_big_eval_results.csv", verbose=1)
 
     total_timesteps = 1e7
     save_interval = 250000
