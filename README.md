@@ -36,14 +36,12 @@ Install the necessary Python packages in your virtual environment:
 pip install numpy scipy pybind11
 ```
 
-### Step 4: Create Directory Structure
+### Step 4: Set Up the Project Directory
 
-Set up the appropriate directory structure for the SOFA framework:
-
+Create a new directory for your project and enter it:
 ```bash
 mkdir mySofa
 cd mySofa
-mkdir build src
 ```
 
 ### Step 5: Clone the SOFA Framework
