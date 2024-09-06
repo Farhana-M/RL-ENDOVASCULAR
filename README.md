@@ -121,7 +121,28 @@ Once SOFA is set up, you can install the **dEVE** package within the same virtua
      python -m deve --help
      ```
 
+### Step 8: Install the dEVE_bench Package
 
+Once SOFA is set up, you can install the **dEVE_bench** package within the same virtual environment. Follow these steps:
+
+1. **Clone the dEVE_bench Repository**
+   - Clone the dEVE_bench package repository using Git:
+     ```bash
+     git clone https://github.com/lkarstensen/deve_bench.git
+     cd deve_bench
+     ```
+
+2. **Install the dEVE_bench Package**
+   - Install the dEVE_bench package in editable mode (or regular mode) inside the virtual environment:
+     ```bash
+     python3 -m pip install -e .
+     ```
+
+3. **Verify the dEVE_bench Installation**
+   - To verify that dEVE_bench is installed correctly, you can check the available commands:
+     ```bash
+     python -m deve_bench --help
+     ```
 
 
 
