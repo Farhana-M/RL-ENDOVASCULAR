@@ -9,11 +9,11 @@ This guide provides step-by-step instructions to set up a Python virtual environ
 - Python (preferably 3.8 or higher)
 - Git
 
-## Installation Steps
+## Setup Process
 
 ### Step 1: Create a Python Virtual Environment
 
-You can use tools like venv, conda, or pyenv to create a virtual environment. Here is the method using Python's venv:
+To isolate your project's dependencies, create a Python virtual environment. You can use tools like `venv`, `conda`, or `pyenv` to do this. Below is the method for creating a virtual environment using Python's built-in `venv` tool:
 
 ```bash
 # Create the virtual environment
@@ -21,6 +21,9 @@ python -m venv myenv
 ```
 
 ### Step 2: Activate the Virtual Environment
+
+Once the virtual environment is created, activate it with the following command:
+
 ```bash
 # On Windows
 myenv\Scripts\activate
