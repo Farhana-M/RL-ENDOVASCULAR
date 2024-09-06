@@ -104,7 +104,13 @@ mkdir build
      - If errors occur indicating missing files or incorrect paths, return to the CMake settings to adjust the paths or add any missing components as necessary. Errors might relate to missing libraries, incorrect paths, or configuration issues that need resolution.
      - Continue adjusting and generating until the process completes without errors, ensuring a successful setup.
 
-### Step 7: Install the dEVE Package
+### Step 7: Set Environment Variables
+
+- After building SOFA in VisualStudio, you must set the necessary environment variables for SOFA to run properly.
+- Follow the instructions [here](https://sofapython3.readthedocs.io/en/latest/content/Installation.html#using-python3) to set the required environment variables, including **SOFA_ROOT**, which is crucial for SOFA to function.
+- Additionally, set the **PYTHONPATH** environment variable to help Python locate the SOFA Python packages. Alternatively, you can replace this step by linking the SOFA Python packages directly into your Python environment.
+
+### Step 8: Install the dEVE Package
 
 Once SOFA is set up, you can install the **dEVE** package within the same virtual environment. Follow these steps:
 
@@ -129,7 +135,7 @@ Once SOFA is set up, you can install the **dEVE** package within the same virtua
    python C:\path\to\deve\examples\function_check.py
     ```
 
-### Step 8: Install the dEVE_bench Package
+### Step 9: Install the dEVE_bench Package
 
 Install the **dEVE_bench** package within the same virtual environment. Follow these steps:
 
