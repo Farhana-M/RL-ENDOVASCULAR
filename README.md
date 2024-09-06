@@ -117,7 +117,7 @@ Once SOFA is set up, you can install the **dEVE** package within the same virtua
      ```
 
 3. **Test the dEVE Installation**
-You can test your installation by running a Python script. Use the following steps:
+   - You can test your installation by running a Python script. Use the following steps:
    ```bash
    cd myenv
    myenv\Scripts\activate
@@ -141,7 +141,7 @@ Install the **dEVE_bench** package within the same virtual environment. Follow t
      python3 -m pip install -e .
      ```
 3. **Test the dEVE_ bench Installation**
-You can test your installation by running a Python script. Use the following steps:
+   -You can test your installation by running a Python script. Use the following steps:
    ```bash
    cd myenv
    myenv\Scripts\activate
