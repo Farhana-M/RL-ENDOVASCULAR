@@ -100,9 +100,9 @@ mkdir build
        C:\path\to\Python3x\Lib\site-packages
        ```
 ### 3. Generate Build Files
-- Click **Generate** to create the build files. During this process, **carefully monitor the output** for any errors or warnings.
-- If errors occur indicating missing files or incorrect paths, return to the CMake settings to adjust the paths or add any missing components as necessary. Errors might relate to missing libraries, incorrect paths, or configuration issues that need resolution.
-- Continue adjusting and generating until the process completes without errors, ensuring a successful setup.
+   - Click **Generate** to create the build files. During this process, **carefully monitor the output** for any errors or warnings.
+   - If errors occur indicating missing files or incorrect paths, return to the CMake settings to adjust the paths or add any missing components as necessary. Errors might relate to missing libraries, incorrect paths, or configuration issues that need resolution.
+   - Continue adjusting and generating until the process completes without errors, ensuring a successful setup.
 
 ### Step 7: Install the dEVE Package
 
