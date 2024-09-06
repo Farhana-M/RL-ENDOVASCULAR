@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This guide provides step-by-step instructions to set up a Python virtual environment, install the necessary dependencies for the **SOFA**, **dEVE**, and **dEVE_bench** frameworks, clone the repositories, and test the installation of **dEVE** and **dEVE_bench** using a Python script.
+This guide provides step-by-step instructions to set up a Python virtual environment on Windows, install the necessary dependencies for the **SOFA**, **dEVE**, and **dEVE_bench** frameworks, clone the repositories, and test the installation of **dEVE** and **dEVE_bench** using a Python script.
 
 ## Requirements
 
@@ -25,7 +25,6 @@ python -m venv myenv
 Once the virtual environment is created, activate it with the following command:
 
 ```bash
-# On Windows
 myenv\Scripts\activate
 ```
 
@@ -55,13 +54,10 @@ Clone the SOFA framework repository into the 'src' directory using Git. Adjust t
 git clone -b v23.12.00 --depth 1 https://github.com/sofa-framework/sofa.git ./src
 ```
 
-
-
-
 ### Step 5: Follow SOFA Instructions and Set CMake Variables
 
 1. **Refer to SOFA Documentation**
-   - Follow the [SOFA documentation](https://sofa-framework.github.io/doc/getting-started/build/windows/) for detailed steps on how to install dependencies (such as Visual Studio, CMake, Qt, Boost, etc.) and to set up the project structure.
+   - Follow the [SOFA documentation](https://sofa-framework.github.io/doc/getting-started/build/windows/) for detailed steps on how to install dependencies (such as Visual Studio, CMake, Qt, Boost, etc.).
    - Follow the instructions to generate the Visual Studio solution using CMake-GUI.
 
 2. **Important: Set Additional CMake Variables**
@@ -80,15 +76,15 @@ git clone -b v23.12.00 --depth 1 https://github.com/sofa-framework/sofa.git ./sr
        ```
      - **Python_EXECUTABLE**: Full path to your Python executable.
        ```bash
-       C:\path\to\Python310\python.exe
+       C:\path\to\Python3x\python.exe
        ```
      - **Python_LIBRARY**: Path to the Python `.lib` file.
        ```bash
-       C:\path\to\Python310\libs\python3.10.lib
+       C:\path\to\Python3x\libs\python3x.lib
        ```
      - **Python_INCLUDE_DIR**: Path to the Python include files.
        ```bash
-       C:\path\to\Python310\include
+       C:\path\to\Python3x\include
        ```
      - **pybind11_DIR**: Path to `pybind11Config.cmake`.
        ```bash
@@ -100,7 +96,7 @@ git clone -b v23.12.00 --depth 1 https://github.com/sofa-framework/sofa.git ./sr
        ```
      - **SP3_PYTHON_PACKAGES_LINK_DIRECTORY**: Set to the Python `site-packages` directory.
        ```bash
-       C:\path\to\Python310\Lib\site-packages
+       C:\path\to\Python3x\Lib\site-packages
        ```
 
 ### Step 7: Install the dEVE Package
