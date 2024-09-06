@@ -46,7 +46,7 @@ cd mySofa
 mkdir build src
 ```
 
-### Step 4: Clone the SOFA Framework
+### Step 5: Clone the SOFA Framework
 
 Clone the SOFA framework repository into the 'src' directory using Git. Adjust the version tag (-b) to the version you need:
 
@@ -54,7 +54,7 @@ Clone the SOFA framework repository into the 'src' directory using Git. Adjust t
 git clone -b v23.12.00 --depth 1 https://github.com/sofa-framework/sofa.git ./src
 ```
 
-### Step 5: Follow SOFA Instructions and Set CMake Variables
+### Step 6: Follow SOFA Instructions and Set CMake Variables
 
 1. **Refer to SOFA Documentation**
    - Follow the [SOFA documentation](https://sofa-framework.github.io/doc/getting-started/build/windows/) for detailed steps on how to install dependencies (such as Visual Studio, CMake, Qt, Boost, etc.).
