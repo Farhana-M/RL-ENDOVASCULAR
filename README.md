@@ -59,13 +59,13 @@ mkdir build
 
 1. **Refer to SOFA Documentation**
    - Follow the [SOFA documentation](https://sofa-framework.github.io/doc/getting-started/build/windows/) for detailed steps on how to install dependencies (such as Visual Studio, CMake, Qt, Boost, etc.).
-   - Follow the instructions to generate the Visual Studio solution using CMake-GUI.
+   - Do not launch CMake-GUI until instructed to generate the Visual Studio solution as outlined in the steps below.
 
 2. **Important: Set Additional CMake Variables**
-   - When you reach the step to **launch CMake-GUI** as part of the SOFA build process, ensure you manually set the following CMake variables before clicking on **Generate**:
-     - **CMAKE_PREFIX_PATH**: Path to your Qt and Boost installations.
+   - Only when you have reached the point in the SOFA documentation where it is time to build the project solution, launch the CMake-GUI. Ensure you manually set the following CMake variables before clicking on **Generate**:
+     - **CMAKE_PREFIX_PATH**: Path to your Qt installation.
        ```bash
-       C:\path\to\qt;C:\path\to\boost
+       C:\path\to\qt
        ```
      - **SOFA_FETCH_SOFAPYTHON3**: Set to `True` to fetch and build SofaPython3.
        ```bash
