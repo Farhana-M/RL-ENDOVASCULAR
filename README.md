@@ -98,6 +98,29 @@ git clone -b v23.12.00 --depth 1 https://github.com/sofa-framework/sofa.git ./sr
        C:\path\to\Python310\Lib\site-packages
        ```
 
+### Step 7: Install the dEVE Package
+
+Once SOFA is set up, you can install the **dEVE** package within the same virtual environment. Follow these steps:
+
+1. **Clone the dEVE Repository**
+   - Clone the dEVE package repository using Git:
+     ```bash
+     git clone https://github.com/lkarstensen/deve.git
+     cd deve
+     ```
+
+2. **Install the dEVE Package**
+   - Install the dEVE package in editable mode (or regular mode) inside the virtual environment:
+     ```bash
+     python3 -m pip install -e .
+     ```
+
+3. **Verify the dEVE Installation**
+   - To verify that dEVE is installed correctly, you can check the available commands:
+     ```bash
+     python -m deve --help
+     ```
+
 
 
 
