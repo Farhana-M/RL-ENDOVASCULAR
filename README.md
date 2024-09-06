@@ -86,7 +86,7 @@ git clone -b v23.12.00 --depth 1 https://github.com/sofa-framework/sofa.git ./sr
        ```bash
        C:\path\to\Python3x\include
        ```
-     - **pybind11_DIR**: Path to `pybind11Config.cmake`.
+     - **pybind11_DIR**: Path to `pybind11Config.cmake`
        ```bash
        C:\path\to\pybind11\share\cmake\pybind11
        ```
