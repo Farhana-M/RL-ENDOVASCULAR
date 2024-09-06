@@ -115,15 +115,17 @@ Once SOFA is set up, you can install the **dEVE** package within the same virtua
      python3 -m pip install -e .
      ```
 
-3. **Verify the dEVE Installation**
-   - To verify that dEVE is installed correctly, you can check the available commands:
-     ```bash
-     python -m deve --help
-     ```
+3. **Test the dEVE Installation**
+You can test your installation by running a Python script. Use the following steps:
+   ```bash
+   cd myenv
+   myenv\Scripts\activate
+   python C:\path\to\deve\examples\function_check.py
+    ```
 
 ### Step 8: Install the dEVE_bench Package
 
-Once SOFA is set up, you can install the **dEVE_bench** package within the same virtual environment. Follow these steps:
+Install the **dEVE_bench** package within the same virtual environment. Follow these steps:
 
 1. **Clone the dEVE_bench Repository**
    - Clone the dEVE_bench package repository using Git:
@@ -137,12 +139,13 @@ Once SOFA is set up, you can install the **dEVE_bench** package within the same 
      ```bash
      python3 -m pip install -e .
      ```
-
-3. **Verify the dEVE_bench Installation**
-   - To verify that dEVE_bench is installed correctly, you can check the available commands:
-     ```bash
-     python -m deve_bench --help
-     ```
+3. **Test the dEVE_ bench Installation**
+You can test your installation by running a Python script. Use the following steps:
+   ```bash
+   cd myenv
+   myenv\Scripts\activate
+   python C:\path\to\deve_bench\example\function_check.py
+    ```
 
 
 
