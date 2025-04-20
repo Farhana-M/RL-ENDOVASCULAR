@@ -56,11 +56,12 @@ pip install -r requirements.txt
 │   │   └── archvariety.py       # Replace in stEVE_bench
 │   ├── requirements.txt
 │   └── README.md
+
 ---
 
-## 🚀 Running Experiments
+## Running Experiments
 
-### ✅ Experiment 1 – Default Hyperparameters
+### Experiment 1 – Default Hyperparameters
 Run an RL algorithm using default parameters:
 
 ```bash
@@ -69,7 +70,7 @@ python benchmark_archvariety.py --config configs/experiment1.yaml --algo td3
 
 Change the `--algo` argument to one of the supported algorithms: `ddpg`, `td3`, `sac`, or `ppo`.
 
-### 🔍 Experiment 2 – Hyperparameter Tuning
+### Experiment 2 – Hyperparameter Tuning
 Run a tuning variant (e.g., alternative network architecture or learning rate):
 
 ```bash
@@ -84,7 +85,7 @@ python benchmark_archvariety.py \
 
 ---
 
-## 📊 Benchmark Results (as reported in our paper)
+## Benchmark Results (as reported in our paper)
 
 | Environment         | Algorithm | Success Rate (%) | Procedure Time (s) | Path Ratio (%) | Exploration Steps |
 |---------------------|-----------|------------------|---------------------|----------------|-------------------|
