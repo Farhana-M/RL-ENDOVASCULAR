@@ -11,7 +11,7 @@ Full experimental details and results are available in the accompanying paper:
 
 ---
 
-## 🔗 Dependencies
+## Dependencies
 
 - [`stEVE`](https://github.com/lkarstensen/stEVE): Simulation framework for endovascular interventions based on SOFA and compatible with Gymnasium.
 - [`stEVE_bench`](https://github.com/lkarstensen/stEVE_bench): Collection of benchmark environments built on stEVE for evaluating robotic endovascular navigation.
@@ -19,7 +19,7 @@ Full experimental details and results are available in the accompanying paper:
 
 ---
 
-## 🛠️ Installation
+## Installation
 
 ```bash
 # (optional) Activate your Python virtual environment
@@ -36,7 +36,7 @@ pip install -r requirements.txt
 📌 **Important:** Replace the file `eve_bench/archvariety.py` in `stEVE_bench` with the modified `archvariety.py` located in the `envs/` folder of this repository to ensure benchmark compatibility.
 
 ---
-## 📁 Recommended Project Layout
+## Recommended Project Layout
 
 ```bash
 <your_workspace>/
@@ -57,8 +57,6 @@ pip install -r requirements.txt
 │   ├── requirements.txt
 │   └── README.md
 
----
-
 ## Running Experiments
 
 ### Experiment 1 – Default Hyperparameters
@@ -68,7 +66,7 @@ Run an RL algorithm using default parameters:
 python benchmark_archvariety.py --config configs/experiment1.yaml --algo td3
 ```
 
-Change the `--algo` argument to one of the supported algorithms: `ddpg`, `td3`, `sac`, or `ppo`.
+📌 Change the `--algo` argument to one of the supported algorithms: `ddpg`, `td3`, `sac`, or `ppo`.
 
 ### Experiment 2 – Hyperparameter Tuning
 Run a tuning variant (e.g., alternative network architecture or learning rate):
@@ -102,12 +100,12 @@ python benchmark_archvariety.py \
 
 ---
 
-## 📬 Citation
+## Citation
 
 If you use this benchmark, please cite:
 
 ---
 
-## 📝 License
+## License
 
 MIT License (see `LICENSE` file).
