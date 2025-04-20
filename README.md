@@ -14,7 +14,7 @@ Full experimental details and results are available in the accompanying paper:
 ## 🔗 Dependencies
 
 - [`stEVE`](https://github.com/lkarstensen/stEVE): Simulation framework for endovascular interventions based on SOFA and compatible with Gymnasium.
-- [`stEVE_bench`](https://github.com/lkarstensen/stEVE_bench): Collection of benchmark environments built on the digital Endovascular Environment (dEVE) for evaluating robotic endovascular navigation.
+- [`stEVE_bench`](https://github.com/lkarstensen/stEVE_bench): Collection of benchmark environments built on stEVE for evaluating robotic endovascular navigation.
 - [`stable-baselines3`](https://github.com/DLR-RM/stable-baselines3): A set of reliable implementations of reinforcement learning algorithms in PyTorch.
 
 ---
@@ -28,8 +28,8 @@ Full experimental details and results are available in the accompanying paper:
 # Refer to their respective README files for setup instructions
 
 # Clone and install this benchmark repository
-git clone <this_repo_url>
-cd <this_repo>
+git clone https://github.com/Farhana-M/RL-ENDOVASCULAR
+cd RL-ENDOVASCULAR
 pip install -r requirements.txt
 ```
 
