@@ -36,6 +36,7 @@ pip install -r requirements.txt
 📌 **Important:** Replace the file `eve_bench/archvariety.py` in `stEVE_bench` with the modified `archvariety.py` located in the `envs/` folder of this repository to ensure benchmark compatibility.
 
 ---
+
 ## Recommended Project Layout
 
 ```bash
@@ -56,6 +57,8 @@ pip install -r requirements.txt
 │   │   └── archvariety.py       # Replace in stEVE_bench
 │   ├── requirements.txt
 │   └── README.md
+
+---
 
 ## Running Experiments
 
