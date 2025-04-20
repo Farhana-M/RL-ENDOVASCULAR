@@ -75,11 +75,7 @@ python benchmark_archvariety.py --config configs/experiment1.yaml --algo td3
 Run a tuning variant (e.g., alternative network architecture or learning rate):
 
 ```bash
-python benchmark_archvariety.py \
-    --config configs/experiment2.yaml \
-    --base_config configs/experiment1.yaml \
-    --algo sac \
-    --tuning_config lr_1e-3
+python benchmark_archvariety.py --config configs/experiment2.yaml --base_config configs/experiment1.yaml --algo sac --tuning_config lr_1e-3
 ```
 
 📌 For Experiment 2, specify both `--algo` and the corresponding `--tuning_config`.
