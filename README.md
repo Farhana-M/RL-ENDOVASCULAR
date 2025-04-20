@@ -41,11 +41,11 @@ pip install -r requirements.txt
 ```bash
 <your_workspace>/
 │
-├── stEVE/                        # Cloned from https://github.com/lkarstensen/stEVE
+├── stEVE/                       # Cloned from https://github.com/lkarstensen/stEVE
 │
 ├── stEVE_bench/                 # Cloned from https://github.com/lkarstensen/stEVE_bench
 │
-├── rl-endovascular-benchmark/   # This repository (your current repo)
+├── RL-ENDOVASCULAR/             # This repository
 │   ├── benchmark_archvariety.py
 │   ├── configs/
 │   │   ├── experiment1.yaml     # Default hyperparameter settings
