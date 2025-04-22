@@ -1,0 +1,41 @@
+ddpg:
+  tuning_config:
+    - name: "net_64_64"
+      policy_kwargs:
+        net_arch: [64, 64]
+    - name: "lr_1e-4"
+      learning_rate: 0.0001
+    - name: "actor_lr_1e-4_critic_lr_1e-3"
+      actor_lr: 0.0001
+      critic_lr: 0.001
+
+td3:
+  tuning_config:
+    - name: "net_64_64"
+      policy_kwargs:
+        net_arch: [64, 64]
+    - name: "lr_7.5e-4"
+      learning_rate: 0.00075
+    - name: "lr_1e-4"
+      learning_rate: 0.0001
+
+
+sac:
+  tuning_config:
+    - name: "net_64_64"
+      policy_kwargs:
+        net_arch: [64, 64]
+    - name: "lr_1e-2"
+      learning_rate: 0.01
+    - name: "lr_1e-3"
+      learning_rate: 0.001
+
+ppo:
+  tuning_config:
+    - name: "net_400_300"
+      policy_kwargs:
+        net_arch: [400, 300]
+    - name: "lr_5.6e-4"
+      learning_rate: 0.00056
+    - name: "lr_1e-3"
+      learning_rate: 0.001
