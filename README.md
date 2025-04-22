@@ -1,13 +1,11 @@
 # Benchmarking Reinforcement Learning Algorithms for Autonomous Mechanical Thrombectomy
 
-This repository provides a benchmark of four model-free reinforcement learning algorithms (**DDPG**, **TD3**, **SAC**, and **PPO**) for autonomous navigation in endovascular environments.  
-The benchmark tasks **use the** **ArchVariety** and **DualDeviceNav** environments from the `stEVE_bench` suite.
+This repository provides a benchmark of four model-free reinforcement learning algorithms (**DDPG**, **TD3**, **SAC**, and **PPO**) for autonomous navigation in endovascular environments. The benchmark tasks **use the** **ArchVariety** and **DualDeviceNav** environments from the `stEVE_bench` suite.
 
 All algorithms are implemented using the `stable-baselines3` library, and training is performed under both default and tuned hyperparameter configurations.
 
 Full experimental details and results are available in the accompanying paper:
-
-**"Benchmarking Reinforcement Learning Algorithms for Autonomous Mechanical Thrombectomy"**
+**"Benchmarking Reinforcement Learning Algorithms for Autonomous Mechanical Thrombectomy"** *(link to be added upon publication)*
 
 ---
 
