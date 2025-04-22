@@ -103,6 +103,12 @@ If you use this benchmark, please cite:
 
 ---
 
+## Coming Soon
+
+Support for running this benchmark on high-performance computing clusters is planned.
+
+---
+
 ## License
 
 MIT License (see `LICENSE` file).
