@@ -9,7 +9,6 @@ import yaml
 from time import perf_counter
 import sys
 import inspect
-sys.path.append("C:/Users/moosa/deve/deve_bench")
 
 from stable_baselines3 import PPO, SAC, TD3, DDPG
 from stable_baselines3.common.noise import NormalActionNoise
@@ -17,7 +16,6 @@ from stable_baselines3.common.vec_env import SubprocVecEnv
 from stable_baselines3.common.callbacks import BaseCallback
 
 from eve_bench.archvariety import ArchVariety
-print(inspect.getfile(ArchVariety))
 
 def get_model_class(algo_name):
     algo_name = algo_name.lower()
@@ -126,20 +124,6 @@ class CustomEvalCallback(BaseCallback):
             self.next_eval_step += self.eval_freq
 
         return True
-
-    # def log_results(self):
-    #     success_rate = self.success_count / self.num_episodes
-    #     mean_time = self.total_navigation_time / self.success_count if self.success_count > 0 else 0
-    #     mean_path_ratio = np.mean(self.path_ratio_unsuccessful) if self.path_ratio_unsuccessful else 0
-
-    #     os.makedirs(os.path.dirname(self.log_path), exist_ok=True)
-
-    #     with open(self.log_path, 'a', newline='') as file:
-    #         writer = csv.writer(file)
-    #         writer.writerow([self.num_timesteps, f"{success_rate:.2f}", f"{mean_time:.2f}", f"{mean_path_ratio:.8f}"])
-
-    #     if self.verbose > 0:
-    #         print(f"Evaluated at {self.num_timesteps} steps: Success Rate={success_rate:.2%}, Time={mean_time:.2f}s")
     
     def log_results(self):
         success_rate = self.success_count / self.num_episodes
@@ -148,7 +132,6 @@ class CustomEvalCallback(BaseCallback):
 
         os.makedirs(os.path.dirname(self.log_path), exist_ok=True)
 
-        # Write header if file is new/empty
         write_header = not os.path.exists(self.log_path) or os.stat(self.log_path).st_size == 0
 
         with open(self.log_path, 'a', newline='') as file:
@@ -205,13 +188,6 @@ if __name__ == "__main__":
         if not args.base_config:
             raise ValueError("Base config is required when using tuning_config")
 
-        # train_env_cfg = base_cfg[algo]["train_env"]
-        # eval_env_cfg = base_cfg[algo]["eval_env"]
-
-        # train_cfg.setdefault("model_path", f"./models/experiment2/{algo}_{args.tuning_config}")
-        # train_cfg.setdefault("checkpoint_prefix", f"{algo}_exp2_{args.tuning_config}")
-        # train_cfg.setdefault("log_path", f"./logs/experiment2/{algo}_{args.tuning_config}_eval.csv")
-        
         train_cfg = base_cfg[algo]["train"].copy()
         
         for key, value in selected_cfg.items():
@@ -220,7 +196,6 @@ if __name__ == "__main__":
 
         train_env_cfg = base_cfg[algo]["train_env"]
         eval_env_cfg = base_cfg[algo]["eval_env"]
-        # Explicitly override save paths for Experiment 2
         train_cfg["model_path"] = f"./models/experiment2/{algo}_{args.tuning_config}"
         train_cfg["checkpoint_prefix"] = f"{algo}_exp2_{args.tuning_config}"
         train_cfg["log_path"] = f"./logs/experiment2/{algo}_{args.tuning_config}_eval.csv"
