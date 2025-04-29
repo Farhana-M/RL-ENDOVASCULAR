@@ -86,7 +86,9 @@ Train an RL agent using the DualDeviceNav environment:
 ```bash
 python benchmark_dualdevicenav.py --config configs/experiment3.yaml --algo td3
 ```
+
 📌 Change the `--algo` argument to one of the supported algorithms: `ddpg`, `td3`, `sac`, or `ppo`.
+
 ---
 
 ## Benchmark Results (as reported in our paper)
