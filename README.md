@@ -5,7 +5,7 @@ This repository provides a benchmark of four model-free reinforcement learning a
 All algorithms are implemented using the `stable-baselines3` library, and training is performed under both default and tuned hyperparameter configurations.
 
 Full experimental details and results are available in the accompanying paper:
-**"Benchmarking Reinforcement Learning Algorithms for Autonomous Mechanical Thrombectomy"** *(link to be added upon publication)*
+**"Benchmarking Reinforcement Learning Algorithms for Autonomous Mechanical Thrombectomy"**(https://doi.org/10.1007/s11548-025-03360-x)
 
 ---
 
@@ -20,10 +20,10 @@ Full experimental details and results are available in the accompanying paper:
 ## Installation
 
 ```bash
-# (optional) Activate your Python virtual environment
+# (Optional) Activate your Python virtual environment
 
-# Ensure stEVE and stEVE_bench are cloned and installed
-# Refer to their respective README files for setup instructions
+# Ensure that stEVE and stEVE_bench are cloned and installed.
+# Refer to their respective README files for setup instructions.
 
 # Clone and install this benchmark repository
 git clone https://github.com/Farhana-M/RL-ENDOVASCULAR
@@ -44,15 +44,17 @@ pip install -r requirements.txt
 │
 ├── stEVE_bench/                 # Cloned from https://github.com/lkarstensen/stEVE_bench
 │
-├── RL-ENDOVASCULAR/             # This repository
+├── RL-ENDOVASCULAR/             # This repo
 │   ├── benchmark_archvariety.py
+│   ├── benchmark_dualdevicenav.py     
 │   ├── configs/
-│   │   ├── experiment1.yaml     # Default hyperparameter settings
-│   │   └── experiment2.yaml     # Hyperparameter tuning variants
-│   ├── models/                  # Checkpoints saved here after training (auto-generated)
+│   │   ├── experiment1.yaml     
+│   │   ├── experiment2.yaml    
+│   │   └── experiment3.yaml     
+│   ├── models/                  # Checkpoints saved here (auto-generated)
 │   ├── logs/                    # Evaluation logs saved here (auto-generated)
 │   ├── envs/
-│   │   └── archvariety.py       # Replace in stEVE_bench
+│   │   └── archvariety.py       
 │   ├── requirements.txt
 │   └── README.md
 ```
@@ -60,8 +62,8 @@ pip install -r requirements.txt
 
 ## Running Experiments
 
-### Experiment 1 – Default Hyperparameters
-Run an RL algorithm using default parameters:
+### Experiment 1 – Default Hyperparameters in ArchVariety
+Train an RL agent using the ArchVariety environment with default hyperparameters:
 
 ```bash
 python benchmark_archvariety.py --config configs/experiment1.yaml --algo td3
@@ -69,7 +71,7 @@ python benchmark_archvariety.py --config configs/experiment1.yaml --algo td3
 
 📌 Change the `--algo` argument to one of the supported algorithms: `ddpg`, `td3`, `sac`, or `ppo`.
 
-### Experiment 2 – Hyperparameter Tuning
+### Experiment 2 – Tuned Hyperparameters in ArchVariety
 Run a tuning variant (e.g., alternative network architecture or learning rate):
 
 ```bash
@@ -78,6 +80,13 @@ python benchmark_archvariety.py --config configs/experiment2.yaml --base_config 
 
 📌 For Experiment 2, specify both `--algo` and the corresponding `--tuning_config`(as defined in `configs/experiment2.yaml` under the selected algorithm)
 
+### Experiment 3 – Tuned Hyperparameters in DualDeviceNav
+Train an RL agent using the DualDeviceNav environment:
+
+```bash
+python benchmark_dualdevicenav.py --config configs/experiment3.yaml --algo td3
+```
+📌 Change the `--algo` argument to one of the supported algorithms: `ddpg`, `td3`, `sac`, or `ppo`.
 ---
 
 ## Benchmark Results (as reported in our paper)
